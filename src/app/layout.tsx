@@ -27,7 +27,22 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        {children}
+        <div className="min-h-screen flex flex-col">
+          {/* Header with blue background */}
+          <header className="bg-blue-500 text-white p-4">
+            <h1 className="text-2xl font-bold">Claude Code Quiz App</h1>
+          </header>
+          
+          {/* Content area with green background */}
+          <main className="flex-1 bg-green-100 p-4">
+            {children}
+          </main>
+          
+          {/* Footer with red background */}
+          <footer className="bg-red-500 text-white p-4 text-center">
+            <p>&copy; 2025 Claude Code Quiz App. Generated with Claude Code.</p>
+          </footer>
+        </div>
       </body>
     </html>
   );
