@@ -83,6 +83,55 @@ const quizData: QuizQuestion[] = [
     options: ['git merge', 'git rebase', 'git checkout', 'git branch'],
     correctAnswer: 0,
     explanation: 'git mergeコマンドで他のブランチを現在のブランチにマージします。'
+  },
+  {
+    id: 9,
+    question: 'ステージングエリアからファイルを取り除くコマンドは？',
+    options: ['git reset', 'git reset HEAD ファイル名', 'git rm', 'git unstage'],
+    correctAnswer: 1,
+    explanation: 'git reset HEAD ファイル名でステージングエリアからファイルを取り除けます。'
+  },
+  {
+    id: 10,
+    question: '現在のブランチ名を確認するコマンドは？',
+    options: ['git status', 'git branch', 'git log', 'git show'],
+    correctAnswer: 1,
+    explanation: 'git branchコマンドで現在のブランチ名と一覧を確認できます。'
+  },
+  {
+    id: 11,
+    question: 'リモートリポジトリの情報を表示するコマンドは？',
+    options: ['git remote', 'git remote -v', 'git info', 'git config'],
+    correctAnswer: 1,
+    explanation: 'git remote -vでリモートリポジトリのURLと詳細情報を表示できます。'
+  },
+  {
+    id: 12,
+    question: 'コミット間の差分を表示するコマンドは？',
+    options: ['git status', 'git diff', 'git log', 'git show'],
+    correctAnswer: 1,
+    explanation: 'git diffコマンドでファイルの変更内容や差分を表示できます。'
+  },
+  {
+    id: 13,
+    question: 'ファイルを完全に削除してGitからも除外するコマンドは？',
+    options: ['git delete', 'git remove', 'git rm', 'git del'],
+    correctAnswer: 2,
+    explanation: 'git rmコマンドでファイルを削除してGitの追跡からも除外します。'
+  },
+  {
+    id: 14,
+    question: '最後のコミットを取り消すコマンドは？',
+    options: ['git undo', 'git revert HEAD', 'git reset --hard HEAD~1', 'git cancel'],
+    correctAnswer: 2,
+    explanation: 'git reset --hard HEAD~1で最後のコミットを完全に取り消せます（注意が必要）。'
+  },
+  {
+    id: 15,
+    question: 'コンフリクト（競合）が発生した時に使用するコマンドは？',
+    options: ['git resolve', 'git fix', 'git merge --continue', 'git add（解決後）'],
+    correctAnswer: 3,
+    explanation: 'コンフリクトを手動で解決した後、git addでマークしてからcommitします。'
   }
 ];
 
